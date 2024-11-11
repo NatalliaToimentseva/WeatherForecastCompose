@@ -47,6 +47,7 @@ import com.example.weatherforecast.ui.features.daysForecastScreen.DaysScreen
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeAction
 import com.example.weatherforecast.ui.features.hoursForecastScreen.HoursScreen
 import com.example.weatherforecast.ui.theme.CardBg
+import com.example.weatherforecasts.constants.CITY
 import com.example.weatherforecasts.ui.models.CurrentDayModel
 import com.example.weatherforecasts.utils.makeToast
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
@@ -81,7 +82,7 @@ fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
 
     Image(
         painter = painterResource(id = R.drawable.bg),
-        contentDescription = "background",
+        contentDescription = null,
         modifier = Modifier
             .fillMaxSize()
             .alpha(0.5f),
@@ -95,7 +96,7 @@ fun HomeScreen(viewModel: HomeViewModel = hiltViewModel()) {
         ) {
             MainCard(
                 state?.currentDayWeather ?: CurrentDayModel("None", "", "", "", "", "", ""),
-                { viewModel.processAction(HomeAction.GetWeatherData("Minsk")) },
+                { viewModel.processAction(HomeAction.GetWeatherData(CITY)) },
                 { viewModel.processAction(HomeAction.ShowDialog) })
             TabRow(
                 selectedTabIndex = selectedTabIndex.value,

@@ -1,11 +1,11 @@
 package com.example.weatherforecasts.utils
 
-import com.example.weatherforecasts.dataSources.entities.WeatherEntity
+import com.example.weatherforecast.network.responses.WeatherEntityResponse
 import com.example.weatherforecasts.ui.models.CurrentDayModel
 import com.example.weatherforecasts.ui.models.DaysForecastModel
 import com.example.weatherforecasts.ui.models.HoursForecastModel
 
-fun WeatherEntity.toCurrentDayModel(): CurrentDayModel {
+fun WeatherEntityResponse.toCurrentDayModel(): CurrentDayModel {
     return CurrentDayModel(
         city = this.location.name,
         dateTime = this.current.lastUpdated,
@@ -17,7 +17,7 @@ fun WeatherEntity.toCurrentDayModel(): CurrentDayModel {
     )
 }
 
-fun WeatherEntity.toListHoursForecastModel(): List<HoursForecastModel> {
+fun WeatherEntityResponse.toListHoursForecastModel(): List<HoursForecastModel> {
     val hoursList = ArrayList<HoursForecastModel>()
     val currentDayHours = this.forecast.forecastDay[0].hour
     for (hour in currentDayHours) {
@@ -33,7 +33,7 @@ fun WeatherEntity.toListHoursForecastModel(): List<HoursForecastModel> {
     return hoursList
 }
 
-fun WeatherEntity.toListDaysForecastModel(): List<DaysForecastModel> {
+fun WeatherEntityResponse.toListDaysForecastModel(): List<DaysForecastModel> {
     val daysList = ArrayList<DaysForecastModel>()
     val days = this.forecast.forecastDay
     for (day in days) {

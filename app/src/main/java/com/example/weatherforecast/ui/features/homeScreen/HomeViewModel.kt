@@ -45,7 +45,7 @@ class HomeViewModel @Inject constructor(
 
     private fun getCurrentLocation() {
         viewModelScope.launch(Dispatchers.IO) {
-            locationTracker.getCurrentLocation()?.let { location ->
+            locationTracker.getCurrentLocation().let { location ->
                 if (location != null) {
                     getWeatherData("${location.latitude}, ${location.longitude}")
                     state.postValue(

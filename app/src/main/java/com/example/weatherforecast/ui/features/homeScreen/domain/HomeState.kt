@@ -1,6 +1,5 @@
 package com.example.weatherforecast.ui.features.homeScreen.domain
 
-import android.location.Location
 import com.example.weatherforecasts.ui.models.CurrentDayModel
 
 data class HomeState(

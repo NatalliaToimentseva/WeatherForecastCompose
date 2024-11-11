@@ -84,7 +84,7 @@ fun MainCard(weather: CurrentDayModel, onClickSync: () -> Unit, onClickSearch: (
                 IconButton(onClick = { onClickSearch.invoke() }) {
                     Icon(
                         painter = painterResource(id = R.drawable.ic_search),
-                        contentDescription = "Search",
+                        contentDescription = null,
                         tint = Color.White
                     )
                 }
@@ -101,7 +101,7 @@ fun MainCard(weather: CurrentDayModel, onClickSync: () -> Unit, onClickSearch: (
                 IconButton(onClick = { onClickSync.invoke() }) {
                     Icon(
                         painter = painterResource(id = R.drawable.ic_sync),
-                        contentDescription = "Search",
+                        contentDescription = null,
                         tint = Color.White
                     )
                 }
