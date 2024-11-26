@@ -5,7 +5,7 @@ It is possible to display the forecast based on user location or user input. The
 
 The application requests permissions and checks for the Internet and GPS.<br />
 
-![WeatherForecastComposeGen](https://github.com/user-attachments/assets/6e52d027-f389-4a46-ae9c-6ebe4dea5c7b)
+![WeatherForecastComposeGen](https://github.com/user-attachments/assets/d905b3ff-2bf9-4396-9247-d894df894ee2)
 
 ## Technology stack used in development:<br />
 * language - Kotlin<br />
