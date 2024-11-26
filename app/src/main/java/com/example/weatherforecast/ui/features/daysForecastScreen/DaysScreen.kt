@@ -28,8 +28,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.example.weatherforecast.R
+import com.example.weatherforecast.constants.SCHEME
 import com.example.weatherforecast.ui.theme.CardBg
-import com.example.weatherforecasts.ui.daysForecastScreen.DaysForecastViewModel
 
 @Preview(showBackground = true)
 @Composable
@@ -88,7 +88,7 @@ fun DaysScreen(viewModel: DaysForecastViewModel = hiltViewModel()) {
                         )
                     }
                     AsyncImage(
-                        model = "https:${item.imageUrl}",
+                        model = "$SCHEME${item.imageUrl}",
                         placeholder = painterResource(id = R.drawable.sunny),
                         contentDescription = "",
                         modifier = Modifier

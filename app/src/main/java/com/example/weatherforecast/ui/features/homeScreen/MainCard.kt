@@ -23,8 +23,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.weatherforecast.R
+import com.example.weatherforecast.constants.SCHEME
 import com.example.weatherforecast.ui.theme.CardBg
-import com.example.weatherforecasts.ui.models.CurrentDayModel
+import com.example.weatherforecast.models.CurrentDayModel
 
 @Composable
 fun MainCard(weather: CurrentDayModel, onClickSync: () -> Unit, onClickSearch: () -> Unit) {
@@ -53,9 +54,9 @@ fun MainCard(weather: CurrentDayModel, onClickSync: () -> Unit, onClickSearch: (
                     color = Color.White
                 )
                 AsyncImage(
-                    model = "https:${weather.imageUrl}",
+                    model = "$SCHEME${weather.imageUrl}",
                     placeholder = painterResource(id = R.drawable.sunny),
-                    contentDescription = "",
+                    contentDescription = null,
                     modifier = Modifier
                         .size(60.dp)
                         .padding(end = 10.dp, top = 10.dp)

@@ -1,9 +1,9 @@
-package com.example.weatherforecasts.domain
+package com.example.weatherforecast.domain
 
 
-import com.example.weatherforecasts.ui.models.CurrentDayModel
-import com.example.weatherforecasts.ui.models.DaysForecastModel
-import com.example.weatherforecasts.ui.models.HoursForecastModel
+import com.example.weatherforecast.models.CurrentDayModel
+import com.example.weatherforecast.models.DaysForecastModel
+import com.example.weatherforecast.models.HoursForecastModel
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow

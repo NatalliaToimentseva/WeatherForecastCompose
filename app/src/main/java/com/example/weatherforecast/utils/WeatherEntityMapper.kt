@@ -1,9 +1,9 @@
-package com.example.weatherforecasts.utils
+package com.example.weatherforecast.utils
 
 import com.example.weatherforecast.network.responses.WeatherEntityResponse
-import com.example.weatherforecasts.ui.models.CurrentDayModel
-import com.example.weatherforecasts.ui.models.DaysForecastModel
-import com.example.weatherforecasts.ui.models.HoursForecastModel
+import com.example.weatherforecast.models.CurrentDayModel
+import com.example.weatherforecast.models.DaysForecastModel
+import com.example.weatherforecast.models.HoursForecastModel
 
 fun WeatherEntityResponse.toCurrentDayModel(): CurrentDayModel {
     return CurrentDayModel(

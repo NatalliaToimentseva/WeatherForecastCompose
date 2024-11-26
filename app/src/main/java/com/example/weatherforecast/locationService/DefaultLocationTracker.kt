@@ -38,24 +38,24 @@ class DefaultLocationTracker (
             return null
         }
 
-        return suspendCancellableCoroutine { cont ->
+        return suspendCancellableCoroutine { continuation ->
             fusedLocationProviderClient.lastLocation.apply {
                 if (isComplete) {
                     if (isSuccessful) {
-                        cont.resume(result) {} // Resume coroutine with location result
+                        continuation.resume(result) {} // Resume coroutine with location result
                     } else {
-                        cont.resume(null) {} // Resume coroutine with null location result
+                        continuation.resume(null) {} // Resume coroutine with null location result
                     }
                     return@suspendCancellableCoroutine
                 }
                 addOnSuccessListener {
-                    cont.resume(it) {}  // Resume coroutine with location result
+                    continuation.resume(it) {}  // Resume coroutine with location result
                 }
                 addOnFailureListener {
-                    cont.resume(null) {} // Resume coroutine with null location result
+                    continuation.resume(null) {} // Resume coroutine with null location result
                 }
                 addOnCanceledListener {
-                    cont.cancel() // Cancel the coroutine
+                    continuation.cancel() // Cancel the coroutine
                 }
             }
         }

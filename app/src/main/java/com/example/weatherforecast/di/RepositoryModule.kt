@@ -1,7 +1,7 @@
-package com.example.weatherforecasts.di
+package com.example.weatherforecast.di
 
-import com.example.weatherforecast.repository.repositoryImplementation.RetrofitWeatherRepository
-import com.example.weatherforecasts.repository.WeatherDataRepository
+import com.example.weatherforecast.repository.RetrofitWeatherRepository
+import com.example.weatherforecast.repository.WeatherDataRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

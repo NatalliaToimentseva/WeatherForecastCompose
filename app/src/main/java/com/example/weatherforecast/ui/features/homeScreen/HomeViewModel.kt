@@ -6,9 +6,10 @@ import androidx.lifecycle.viewModelScope
 import com.example.weatherforecast.locationService.LocationTracker
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeAction
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeState
-import com.example.weatherforecasts.LoadDataException
-import com.example.weatherforecasts.domain.UpdateWeatherController
-import com.example.weatherforecasts.repository.WeatherDataRepository
+import com.example.weatherforecast.LoadDataException
+import com.example.weatherforecast.constants.CITY
+import com.example.weatherforecast.domain.UpdateWeatherController
+import com.example.weatherforecast.repository.WeatherDataRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -53,17 +54,13 @@ class HomeViewModel @Inject constructor(
                             currentLocation = "${location.latitude}, ${location.longitude}"
                         )
                     )
-                } else getWeatherData("Madrid")
+                } else getWeatherData(CITY)
             }
         }
     }
 
     private fun clearError() {
         state.value = state.value?.copy(errorsGettingData = null)
-    }
-
-    private fun setError(message: String) {
-        state.value = state.value?.copy(errorsGettingData = message)
     }
 
     private fun showDialog() {

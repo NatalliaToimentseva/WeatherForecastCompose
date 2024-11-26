@@ -1,10 +1,10 @@
-package com.example.weatherforecasts.ui.hoursForecastScreen
+package com.example.weatherforecast.ui.features.hoursForecastScreen
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.weatherforecast.ui.features.hoursForecastScreen.domain.HoursState
-import com.example.weatherforecasts.domain.UpdateWeatherController
+import com.example.weatherforecast.domain.UpdateWeatherController
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

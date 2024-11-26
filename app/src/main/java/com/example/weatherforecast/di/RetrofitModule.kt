@@ -1,7 +1,7 @@
-package com.example.weatherforecasts.di
+package com.example.weatherforecast.di
 
-import com.example.weatherforecasts.constants.URL
-import com.example.weatherforecasts.dataSources.RetrofitApi
+import com.example.weatherforecast.constants.URL
+import com.example.weatherforecast.network.RetrofitApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

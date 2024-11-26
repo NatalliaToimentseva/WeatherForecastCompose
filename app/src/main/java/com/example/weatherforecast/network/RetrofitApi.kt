@@ -1,6 +1,6 @@
-package com.example.weatherforecasts.dataSources
+package com.example.weatherforecast.network
 
-import com.example.weatherforecasts.constants.NO_QUERY
+import com.example.weatherforecast.constants.NO_QUERY
 import com.example.weatherforecast.network.responses.WeatherEntityResponse
 import retrofit2.Response
 import retrofit2.http.GET

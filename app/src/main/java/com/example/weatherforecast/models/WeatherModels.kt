@@ -1,4 +1,4 @@
-package com.example.weatherforecasts.ui.models
+package com.example.weatherforecast.models
 
 sealed class Weather
 

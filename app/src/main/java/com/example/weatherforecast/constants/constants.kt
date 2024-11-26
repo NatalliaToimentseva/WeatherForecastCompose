@@ -1,4 +1,4 @@
-package com.example.weatherforecasts.constants
+package com.example.weatherforecast.constants
 
 const val URL = "https://api.weatherapi.com/v1/"
 const val KEY = "fce431b7de8c4ecabe3143852241707"

@@ -47,9 +47,9 @@ import com.example.weatherforecast.ui.features.daysForecastScreen.DaysScreen
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeAction
 import com.example.weatherforecast.ui.features.hoursForecastScreen.HoursScreen
 import com.example.weatherforecast.ui.theme.CardBg
-import com.example.weatherforecasts.constants.CITY
-import com.example.weatherforecasts.ui.models.CurrentDayModel
-import com.example.weatherforecasts.utils.makeToast
+import com.example.weatherforecast.constants.CITY
+import com.example.weatherforecast.models.CurrentDayModel
+import com.example.weatherforecast.utils.makeToast
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
 import kotlinx.coroutines.launch

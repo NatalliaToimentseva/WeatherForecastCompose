@@ -1,6 +1,6 @@
 package com.example.weatherforecast.ui.features.homeScreen.domain
 
-import com.example.weatherforecasts.ui.models.CurrentDayModel
+import com.example.weatherforecast.models.CurrentDayModel
 
 data class HomeState(
     val currentDayWeather: CurrentDayModel? = null,

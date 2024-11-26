@@ -1,4 +1,4 @@
-package com.example.weatherforecasts
+package com.example.weatherforecast
 
 import java.io.IOException
 
