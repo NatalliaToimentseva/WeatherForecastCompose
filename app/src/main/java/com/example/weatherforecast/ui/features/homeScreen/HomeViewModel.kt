@@ -3,7 +3,7 @@ package com.example.weatherforecast.ui.features.homeScreen
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.weatherforecast.locationService.LocationTracker
+import com.example.weatherforecast.locationController.LocationTracker
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeAction
 import com.example.weatherforecast.ui.features.homeScreen.domain.HomeState
 import com.example.weatherforecast.LoadDataException

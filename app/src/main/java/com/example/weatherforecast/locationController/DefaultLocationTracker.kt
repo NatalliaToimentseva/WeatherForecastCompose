@@ -1,4 +1,4 @@
-package com.example.weatherforecast.locationService
+package com.example.weatherforecast.locationController
 
 import android.app.Application
 import android.content.Context

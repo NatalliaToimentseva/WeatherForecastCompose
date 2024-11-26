@@ -1,8 +1,8 @@
 package com.example.weatherforecast.di
 
 import android.app.Application
-import com.example.weatherforecast.locationService.DefaultLocationTracker
-import com.example.weatherforecast.locationService.LocationTracker
+import com.example.weatherforecast.locationController.DefaultLocationTracker
+import com.example.weatherforecast.locationController.LocationTracker
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import dagger.Module
